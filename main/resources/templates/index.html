@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar Shop</title>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+    <header th:replace="fragments/header"></header>
+    <nav th:replace="fragments/navbar"></nav>
+    <div th:if="${items != null}">
+        <table th:replace="fragments/itemsTable"></table>
+    </div>
+    <h3 th:if="${averageStock != null}"
+        th:text="|Average Stock: ${averageStock}|" class="average-stock"></h3>
+    <h3 th:if="${mostExpensive != null}"
+        th:text="|Most Expensive: ${mostExpensive}|" class="most-expensive"></h3>
+</body>
+</html>

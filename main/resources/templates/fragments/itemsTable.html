@@ -1,0 +1,14 @@
+<table th:fragment="itemsTable" class="items-table">
+    <tr class="table-header">
+        <th class="table-header name">Name</th>
+        <th class="table-header desc">Description</th>
+        <th class="table-header price">Price</th>
+        <th class="table-header stock">Stock</th>
+    </tr>
+    <tr th:each="item : ${items}">
+        <td th:text="${item.getName()}" class="text-left"></td>
+        <td th:text="${item.getDescription}" class="text-left"></td>
+        <td th:text="${item.getPrice} + ' HUF'" class="text-right"></td>
+        <td th:text="${item.getStock}" class="text-right"></td>
+    </tr>
+</table>

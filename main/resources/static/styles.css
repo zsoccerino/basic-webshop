@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    color: #e0e0e0;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+.header{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    position: center;
+}
+.header a {
+    color: #d53030;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+header a:hover {
+    color: #ff6969;
+}
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color: #333;
+}
+.navbar a {
+    float: left;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background-color: #e0e0e0;
+    color: #2a110a;
+}
+.items-table {
+    background-color: #e0e0e0;
+    color: black;
+    width: 70%;
+    font-size: 20px;
+    position: center;
+    margin: auto;
+    padding: 14px;
+}
+.table-header {
+    border-bottom: 1px solid #333;
+    position: center;
+}
+.name {
+    width: 20%;
+}
+.desc {
+    width: 25%;
+}
+.price {
+    width: 15%;
+}
+.stock {
+    width: 10%;
+}
+tr:nth-child(even) {
+    background-color: #c0c0c0;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.average-stock,
+.most-expensive {
+    color: #e0e0e0;
+    font-weight: lighter;
+    margin: 30px;
+    font-size: 24px;
+}

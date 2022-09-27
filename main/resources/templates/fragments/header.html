@@ -1,0 +1,7 @@
+<header th:fragment="header" class="header">
+    <a href="../">MY GUITAR SHOP</a>
+    <form th:action="@{/search}" method="post">
+        <input type="text" placeholder="search..">
+        <button type="submit">Search</button>
+    </form>
+</header>
